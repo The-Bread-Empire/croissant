@@ -9,6 +9,7 @@ app = Flask('')
 def home():
 	return 'Welcome to the Discord Croissant Bot!'
 
+
 def run():
   app.run(
 		host='0.0.0.0',
