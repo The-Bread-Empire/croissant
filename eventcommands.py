@@ -60,6 +60,8 @@ eventcommands = {
   "Winged Nosk":"My pet, miNEEE",
   "Crystal Guardian":"roCk",
   "Uumuu":"UWU ^v^  i want to die now",
-  "Hive knight":"Swarm of death bees rain from above!"
-
+  "Hive knight":"Swarm of death bees rain from above!",
+  "cheese":"unholy",
+  "gun":"guns are dangerous",
+  "croissant":"haha a bored loser"
 }
