@@ -49,7 +49,13 @@ async def on_message(message):
      await client.change_presence(activity=discord.Game(name="Ur mom"))
     else:
       await client.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name="you"))
-    randomspeak = random.randint(1, 2)
+    if message.guild.id == 691024705905229945:
+      nospam1 = 1
+      nospam2 = 4
+    else:
+      nospam1 = 1
+      nospam2 = 2
+    randomspeak = random.randint(nospam1, nospam2)
     if randomspeak == 1:
       if not message.author.id == 764150242438283335:
 
@@ -119,9 +125,13 @@ async def on_message(message):
         #await message.channel.send("Your mean")
         print(f"{message.author} said: {message.content} (message suppresed in {message.channel.name} channel in the {message.guild.name} server)")
     if message.author.id == 589309749141569554:
-      await message.channel.send(f"Shut up {message.author.name} you abuse your powers")
-    if message.author.id == 589309749141569554:
-      await message.channel.send("NOO brandon you broken bottle of beet juice- hasita made me say that :D")
+      randannoy = random.randint(1, 25)
+      print(randannoy)
+      if randannoy == 1:
+        await message.channel.send(f"Shut up {message.author.name} you abuse your powers")
+      elif randannoy == 2:
+        await message.channel.send("NOO brandon you broken bottle of beet juice- hasita made me say that :D")
+      
     
     answers = {
     "rock" : "skizzors",
@@ -152,6 +162,19 @@ async def on_message(message):
       await message.channel.send(f"You rolled a {diceroll}")
     if message.content == "join a server":
       await message.channel.send("Join code for croissant bot: https://discord.com/api/oauth2/authorize?client_id=764150242438283335&permissions=8&scope=bot")
+    if (message.guild.id == 691024705905229945) or (message.guild.id == 761323034782597140):
+      gunrand = random.randint(1, 20)
+      bodyrand = random.randint(1, 4)
+      if bodyrand == 1:
+        bodypart = "foot"
+      elif bodyrand == 2:
+        bodypart = "leg"
+      elif bodyrand == 3:
+        bodypart = "eye"
+      elif bodyrand == 4:
+        bodypart = "hair"
+      if gunrand == 1:
+        await message.channel.send(f"I told you guns are dangerous. You shot yourself in the {bodypart}")
 
 
 #below is just certain commands connecting the bot to the interent and connecting it to discord
