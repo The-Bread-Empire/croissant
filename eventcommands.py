@@ -59,9 +59,11 @@ eventcommands = {
   "Nightmare King Grim":"Stoopid vampire man",
   "Winged Nosk":"My pet, miNEEE",
   "Crystal Guardian":"roCk",
-  "Uumuu":"UWU ^v^  i want to die now",
+  "Uumuu":"UWU   i want to die now",
   "Hive knight":"Swarm of death bees rain from above!",
   "cheese":"unholy",
   "gun":"guns are dangerous",
-  "croissant":"haha a bored loser"
+  "croissant":"haha a bored loser",
+  "nou":"get fwhucked brandon",
+  "Angel":"He is my best fwriend, we get icecream together!! :D"
 }

@@ -88,7 +88,7 @@ async def on_message(message):
     if rank in message.content:
       print(f"{message.author} sent the message")
       if message.content == "!rank":
-        await message.channel.send("your a dissapointment")
+        await message.channel.send("you're a dissapointment")
       else:
        print("Someone is trying to surpass you")
     
@@ -106,12 +106,12 @@ async def on_message(message):
             gamesr = random.randint(3, 6)
 
     if message.content == "Croissant eat the chat":
-      for i in range(100):
-        if message.author.id == 547942699572002836: 
-          await message.channel.send("** ** \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n ** **")
-          
+      while True:
+        
+        await message.channel.send("** ** \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n ** **")
+    
     if message.author.id == 424413952559153178:
-      if message.guild.id == 691024705905229945:
+      if message.author.guild.id == 691024705905229945:
         print("suppression disabled")
       else:
         #message.delete()
@@ -120,17 +120,17 @@ async def on_message(message):
     if message.author.id == 764656938947969035:
       await message.channel.send(f"Shut up {message.author.name} or I will yeet a snake at you")
         
-    if message.author.id == 589309749141569554:
+    if message.author.id == 515704039686668310:
         #message.delete()
         #await message.channel.send("Your mean")
         print(f"{message.author} said: {message.content} (message suppresed in {message.channel.name} channel in the {message.guild.name} server)")
-    if message.author.id == 589309749141569554:
-      randannoy = random.randint(1, 25)
+    if message.author.id == 515704039686668310:
+      randannoy = random.randint(1, 9)
       print(randannoy)
       if randannoy == 1:
-        await message.channel.send(f"Shut up {message.author.name} you abuse your powers")
+        await message.channel.send(f"{message.author.name} thinks im a good bot :smirk:")
       elif randannoy == 2:
-        await message.channel.send("NOO brandon you broken bottle of beet juice- hasita made me say that :D")
+        await message.channel.send("I am a good bot :smirk:")
       
     
     answers = {
@@ -163,7 +163,7 @@ async def on_message(message):
     if message.content == "join a server":
       await message.channel.send("Join code for croissant bot: https://discord.com/api/oauth2/authorize?client_id=764150242438283335&permissions=8&scope=bot")
     if (message.guild.id == 691024705905229945) or (message.guild.id == 761323034782597140):
-      gunrand = random.randint(1, 20)
+      gunrand = random.randint(1, 100)
       bodyrand = random.randint(1, 4)
       if bodyrand == 1:
         bodypart = "foot"
@@ -175,8 +175,20 @@ async def on_message(message):
         bodypart = "hair"
       if gunrand == 1:
         await message.channel.send(f"I told you guns are dangerous. You shot yourself in the {bodypart}")
+    if message.content == "destroy":
+      channel_name = "art"
+      existing_channel = discord.utils.get(message.guild.channels, name=channel_name)
+      await existing_channel.delete()
+    
+    if message.content == "Kill me":
+      discord.Member = message.author
+      print(message.author)          
+      await discord.Member.kick(reason = None)
+    if message.author.id == 459905208160616459:
+      await message.delete()
+      print(f"now thats a bad mark you cant say: ||{message.content}||")
 
-
+  
 #below is just certain commands connecting the bot to the interent and connecting it to discord
 make_website()
 token = os.environ.get("DISCORD_BOT_SECRET")
