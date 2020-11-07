@@ -65,5 +65,7 @@ eventcommands = {
   "gun":"guns are dangerous",
   "croissant":"haha a bored loser",
   "nou":"get fwhucked brandon",
+  "heck": "Error 420: No applicable 'bad word' can satisfy. Please try again",
+  "shoot": "Error 420: No applicable 'bad word' can satisfy. Please try again",
   "Angel":"He is my best fwriend, we get icecream together!! :D"
 }
